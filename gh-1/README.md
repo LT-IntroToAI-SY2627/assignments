@@ -57,25 +57,25 @@ cd assignments
 
 ### Step 3 — Switch to the GH-1 branch
 
-Mr. Berg has already created a `gh1` branch with starter files. Switch to it:
+Mr. Berg has already created a `gh-1` branch with starter files. Switch to it:
 
 ```bash
-git checkout gh1
-git pull origin gh1
+git checkout gh-1
+git pull origin gh-1
 ```
 
 ---
 
 ### Step 4 — Create your personal branch
 
-Create a new branch using the naming convention `gh1-firstnamelastinitial`. Alex would run:
+Create a new branch using the naming convention `gh-1-firstnamelastinitial`. Alex would run:
 
 ```bash
-git checkout -b gh1-alexj
+git checkout -b gh-1-alexj
 ```
 
 > **Naming convention:** Use your first name and last initial, all lowercase, no spaces.  
-> Examples: `gh1-alexj`, `gh1-mariac`, `gh1-jamesw`
+> Examples: `gh-1-alexj`, `gh-1-mariac`, `gh-1-jamesw`
 
 ---
 
@@ -114,7 +114,7 @@ Stage your changes, write a commit message, and push your branch:
 ```bash
 git add .
 git commit -m "Add [Your Name] to roster"
-git push origin gh1-alexj
+git push origin gh-1-alexj
 ```
 
 > **Good commit messages** are short and present tense. Describe what you did:  
@@ -127,7 +127,7 @@ git push origin gh1-alexj
 
 1. Go to [github.com/LT-IntroToAI-SY2627/assignments](https://github.com/LT-IntroToAI-SY2627/assignments)
 2. Click **Compare & pull request**
-3. Make sure the base branch is set to `gh1` — **not main**
+3. Make sure the base branch is set to `gh-1` — **not main**
 4. Title your PR: `GH-1: [Your Name]`
 5. Add a short description of what you did
 6. Click **Create pull request**
@@ -138,7 +138,7 @@ git push origin gh1-alexj
 
 Now that you have completed the walkthrough, do the following on your own — **without step-by-step instructions.**
 
-In the `gh1` folder, create a new file called `fun_fact_yourfirstnamelastinitial.md` (example: `fun_fact_alexj.md`). Inside it, write:
+In the `gh-1` folder, create a new file called `fun_fact_yourfirstnamelastinitial.md` (example: `fun_fact_alexj.md`). Inside it, write:
 
 - Your name
 - One fun fact about yourself
@@ -153,11 +153,11 @@ Commit the file to your branch with a meaningful commit message and make sure it
 
 ## Checklist Before You Submit
 
-- [ ] Branch is named `gh1-firstnamelastinitial`
+- [ ] Branch is named `gh-1-firstnamelastinitial`
 - [ ] Your name is added to `roster.md`
 - [ ] `fun_fact_yourfirstnamelastinitial.md` is created and filled out
 - [ ] All changes are committed with a meaningful message
-- [ ] Pull request is open and targeting the `gh1` branch
+- [ ] Pull request is open and targeting the `gh-1` branch
 - [ ] PR title is `GH-1: [Your Name]`
 
 ---
