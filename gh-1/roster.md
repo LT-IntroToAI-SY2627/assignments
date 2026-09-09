@@ -3,7 +3,7 @@
 | Pouch # | Name |
 |---|---|
 | 1 |  |
-| 2 |  |
+| 2 |  | Simona Arsic
 | 3 |  |
 | 4 |  |
 | 5 | Alex Johnson |
