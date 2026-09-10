@@ -21,7 +21,7 @@
 | 12 | Olivier Kociolek |
 | 13 |  |
 | 14 |  |
-| 15 |  |
+| 15 | Torin Lee |
 | 16 |Isaac Lewis  |
 | 17 |  |
 | 18 | Adrian Ojeda |
