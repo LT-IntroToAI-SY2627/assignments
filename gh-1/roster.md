@@ -23,7 +23,7 @@
 | 14 |  |
 | 15 | Torin Lee |
 | 16 |Isaac Lewis  |
-| 17 |  |
+| 17 |  Trong Nguyen
 | 18 | Adrian Ojeda |
 | 19 |  |
 | 20 |  |
