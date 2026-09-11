@@ -4,7 +4,7 @@
 |---|---|
 | 1 | Efren Albino |
 | 2 |  | Simona Arsic
-| 3 |  |
+| 3 | Ashton Boeke |
 | 4 | Jhonxel De Jesus |
 | 5 | Alex Johnson |
 | 6 |  |
