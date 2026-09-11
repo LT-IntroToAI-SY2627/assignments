@@ -11,7 +11,7 @@
 | 5 | Alex Johnson |
 | 6 |  |
 | 7 |  |
-| 8 |  |
+| 8 | Connor Darge |
 | 9 |  |
 | 10 |  |
 | 11 | Jackson |
