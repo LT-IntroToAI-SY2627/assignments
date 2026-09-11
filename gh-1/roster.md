@@ -11,7 +11,7 @@
 | 7 |  |
 | 8 | Connor Darge |
 | 9 |  |
-| 10 | PeterF |
+| 10 | Peter |
 | 11 | Jackson |
 | 12 |  |
 | 13 | Leo Lawrence |
