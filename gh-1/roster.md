@@ -23,7 +23,7 @@
 | 16 |Isaac Lewis  |
 | 17 |  Trong Nguyen
 | 18 | Adrian Ojeda |
-| 19 |  |
+| 19 | armandp |
 | 20 |  |
 | 21 |  |
 | 22 | Alison Severin |
