@@ -5,12 +5,12 @@
 | 1 | Efren Albino |
 | 2 |  | Simona Arsic
 | 3 | Ashton Boeke |
-| 4 | Jhonxel De Jesus |
+| 4 | Preston |
 | 5 | Alex Johnson |
 | 6 |  |
 | 7 |  |
 | 8 | Connor Darge |
-| 9 |  |
+| 9 | Jhonxel De Jesus |
 | 10 |  |
 | 11 | Jackson |
 | 12 |  |
