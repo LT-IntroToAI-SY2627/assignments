@@ -3,11 +3,9 @@
 | Pouch # | Name |
 |---|---|
 | 1 | Efren Albino |
-| 2 |  |
-| 1 |  |
 | 2 |  | Simona Arsic
 | 3 |  |
-| 4 |  |
+| 4 | Jhonxel De Jesus |
 | 5 | Alex Johnson |
 | 6 |  |
 | 7 |  |
