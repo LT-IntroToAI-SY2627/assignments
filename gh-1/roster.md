@@ -8,7 +8,7 @@
 | 4 | Jhonxel De Jesus |
 | 5 | Alex Johnson |
 | 6 |  |
-| 7 |  |
+| 7 | Mark Buenvenida |
 | 8 | Connor Darge |
 | 9 |  |
 | 10 |  |
