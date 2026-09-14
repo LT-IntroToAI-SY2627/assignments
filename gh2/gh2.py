@@ -19,7 +19,7 @@
 # multiply(2, 2)  ->  4
 
 def multiply(a, b):
-    pass
+    return a * b
 
 assert multiply(3, 4) == 12, "multiply test 1 failed"
 assert multiply(5, 0) == 0,  "multiply test 2 failed"
@@ -41,7 +41,14 @@ assert multiply(2, 2) == 4,  "multiply test 3 failed"
 # classify_temp(30)  ->  "cold"
 
 def classify_temp(temp):
-    pass
+    if temp >= 90:
+        return "hot"
+    elif temp >= 70:
+        return "warm"   
+    elif temp >= 50:
+        return "cool"
+    else:
+        return "cold"
 
 assert classify_temp(95) == "hot",  "classify_temp test 1 failed"
 assert classify_temp(75) == "warm", "classify_temp test 2 failed"
@@ -60,6 +67,21 @@ assert classify_temp(30) == "cold", "classify_temp test 4 failed"
 #   - At least 2 asserts that test it
 
 # Write your function here:
-
+def classify_grade(score):
+    if score >= 89.5:
+        return "A"
+    elif score >= 79.5:
+        return "B"
+    elif score >= 69.5:
+        return "C"
+    elif score >= 59.5:
+        return "D"
+    else:
+        return "F"
 
 # Write your asserts here:
+assert classify_grade(95) == "A", "classify_grade test 1 failed"
+assert classify_grade(85) == "B", "classify_grade test 2 failed"
+assert classify_grade(75) == "C", "classify_grade test 3 failed"
+assert classify_grade(65) == "D", "classify_grade test 4 failed"
+assert classify_grade(55) == "F", "classify_grade test 5 failed"
