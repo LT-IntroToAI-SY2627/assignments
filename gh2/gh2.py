@@ -1,7 +1,7 @@
 # gh2.py
 # GH-2: Functions & Conditionals
 # Introduction to AI | Lane Tech College Prep
-# Name: [Your Name Here]
+# Name: [Jackson Knight]
 
 # Instructions:
 # Replace each 'pass' with your solution.
@@ -19,7 +19,7 @@
 # multiply(2, 2)  ->  4
 
 def multiply(a, b):
-    pass
+    return a * b
 
 assert multiply(3, 4) == 12, "multiply test 1 failed"
 assert multiply(5, 0) == 0,  "multiply test 2 failed"
@@ -41,7 +41,16 @@ assert multiply(2, 2) == 4,  "multiply test 3 failed"
 # classify_temp(30)  ->  "cold"
 
 def classify_temp(temp):
-    pass
+    if temp >= 90:
+        return "hot"
+    elif temp >= 70 and temp < 90:
+        return "warm"
+    elif temp >= 50 and temp < 70:
+        return "cool"
+    elif temp < 50:
+        return "cold"
+    else:
+        return "invalid temperature"
 
 assert classify_temp(95) == "hot",  "classify_temp test 1 failed"
 assert classify_temp(75) == "warm", "classify_temp test 2 failed"
@@ -61,5 +70,15 @@ assert classify_temp(30) == "cold", "classify_temp test 4 failed"
 
 # Write your function here:
 
+def isLaneTheBest(answer):
+    if answer == "yes":
+        return "Correct! Lane Tech is the best!"
+    elif answer == "no":
+        return "Incorrect! Lane Tech is the best!"
+    else:
+        return "Please answer with 'yes' or 'no'."
 
 # Write your asserts here:
+assert isLaneTheBest("yes") == "Correct! Lane Tech is the best!", "isLaneTheBest test 1 failed"
+assert isLaneTheBest("no") == "Incorrect! Lane Tech is the best!", "isLaneTheBest test 2 failed"
+assert isLaneTheBest("maybe") == "Please answer with 'yes' or 'no'.", "isLaneTheBest test 3 failed"
