@@ -19,7 +19,7 @@
 # multiply(2, 2)  ->  4
 
 def multiply(a, b):
-    pass
+    return a * b 
 
 assert multiply(3, 4) == 12, "multiply test 1 failed"
 assert multiply(5, 0) == 0,  "multiply test 2 failed"
@@ -41,7 +41,14 @@ assert multiply(2, 2) == 4,  "multiply test 3 failed"
 # classify_temp(30)  ->  "cold"
 
 def classify_temp(temp):
-    pass
+    if temp >= 90:
+        return "hot"
+    elif temp >= 70:
+        return "warm"
+    elif temp >= 50:
+        return "cool"
+    else:
+        return "cold"
 
 assert classify_temp(95) == "hot",  "classify_temp test 1 failed"
 assert classify_temp(75) == "warm", "classify_temp test 2 failed"
