@@ -24,6 +24,7 @@ jobs:
 
       - name: Test Problem 1 - multiply
         continue-on-error: true
+        working-directory: gh2
         run: |
           python -c "
           from gh2 import multiply
@@ -35,6 +36,7 @@ jobs:
 
       - name: Test Problem 2 - classify_temp
         continue-on-error: true
+        working-directory: gh2
         run: |
           python -c "
           from gh2 import classify_temp
