@@ -19,7 +19,7 @@
 # multiply(2, 2)  ->  4
 
 def multiply(a, b):
-    pass
+    return a * b
 
 assert multiply(3, 4) == 12, "multiply test 1 failed"
 assert multiply(5, 0) == 0,  "multiply test 2 failed"
