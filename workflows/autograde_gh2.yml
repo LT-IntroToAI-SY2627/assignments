@@ -1,0 +1,44 @@
+name: GH-2 Autograder
+
+on:
+  push:
+    branches:
+      - 'gh2-*'
+
+jobs:
+  autograde:
+    runs-on: ubuntu-latest
+    name: Run GH-2 Tests
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install pytest
+        run: pip install pytest
+
+      - name: Test Problem 1 - multiply
+        run: |
+          python -c "
+          from gh2 import multiply
+          assert multiply(3, 4) == 12, 'multiply(3, 4) should return 12'
+          assert multiply(5, 0) == 0,  'multiply(5, 0) should return 0'
+          assert multiply(2, 2) == 4,  'multiply(2, 2) should return 4'
+          print('Problem 1 - multiply: PASSED')
+          "
+
+      - name: Test Problem 2 - classify_temp
+        run: |
+          python -c "
+          from gh2 import classify_temp
+          assert classify_temp(95) == 'hot',  'classify_temp(95) should return hot'
+          assert classify_temp(75) == 'warm', 'classify_temp(75) should return warm'
+          assert classify_temp(55) == 'cool', 'classify_temp(55) should return cool'
+          assert classify_temp(30) == 'cold', 'classify_temp(30) should return cold'
+          print('Problem 2 - classify_temp: PASSED')
+          "
