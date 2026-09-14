@@ -21,6 +21,7 @@
 def multiply(a, b):
     return a * b
 
+assert multiply(2, 3) == 6, "multiply test 0 failed"
 assert multiply(3, 4) == 12, "multiply test 1 failed"
 assert multiply(5, 0) == 0,  "multiply test 2 failed"
 assert multiply(2, 2) == 4,  "multiply test 3 failed"
