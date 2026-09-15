@@ -70,7 +70,7 @@ assert classify_temp(30) == "cold", "classify_temp test 4 failed"
 def is_lunchtime(hour):
     if hour >= 11:
         return True
-    elif hour <= 13:
+    elif hour <= 14:
         return True
     else:
         return False
