@@ -67,6 +67,24 @@ assert classify_temp(30) == "cold", "classify_temp test 4 failed"
 #   - At least 2 asserts that test it
 
 # Write your function here:
-
+def divide(a,b):
+    if b == 0:
+        return "Error: Division by zero"
+    elif b == 1:
+        return a
+    elif b == -1:
+        return -a
+    elif a == 0:
+        return 0
+    elif a == b:
+        return 1
+    elif a == 1:
+        return b
+    else:
+        return a / b
 
 # Write your asserts here:
+assert divide(10, 2) == 5, "divide test 1 failed"
+assert divide(10, 0) == "Error: Division by zero", "divide test 2 failed"
+assert divide(10, 1) == 10, "divide test 3 failed"
+assert divide(10, -1) == -10, "divide test 4 failed"
