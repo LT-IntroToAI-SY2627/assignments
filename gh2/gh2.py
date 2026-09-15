@@ -67,6 +67,16 @@ assert classify_temp(30) == "cold", "classify_temp test 4 failed"
 #   - At least 2 asserts that test it
 
 # Write your function here:
+def check_student_age(num):
+    if num >= 14:
+        return "High School Student"
+    elif num >= 11:
+        return "Middle School Student"
+    else:
+        return "Elementary School Student"
 
 
 # Write your asserts here:
+assert check_student_age(15) == "High School Student", "check_student_age test 1 failed"
+assert check_student_age(12) == "Middle School Student", "check_student_age test 2 failed"
+assert check_student_age(8) == "Elementary School Student", "check_student_age test 3 failed"
