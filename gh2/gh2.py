@@ -68,5 +68,19 @@ assert classify_temp(30) == "cold", "classify_temp test 4 failed"
 
 # Write your function here:
 
+def classify_age(age):
+    if age < 13:
+        return "child"
+    elif age < 20:
+        return "teenager"
+    elif age < 65: 
+        return "adult"
+    else:
+        return "senior"
 
 # Write your asserts here:
+classify_age(10) == "child", "classify_age test 1 failed"
+classify_age(21) == "adult", "classify_age test 2 failed"
+
+print(classify_age(10)) # Output: "child"
+print(classify_age(21)) # Output: "adult"
