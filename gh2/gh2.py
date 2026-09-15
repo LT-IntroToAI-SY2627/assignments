@@ -67,6 +67,15 @@ assert classify_temp(30) == "cold", "classify_temp test 4 failed"
 #   - At least 2 asserts that test it
 
 # Write your function here:
-
+def is_odd(num):
+    if num % 2 != 0:
+        return True
+    return False
 
 # Write your asserts here:
+assert is_odd(3) == True, "is_odd test 1 failed"
+assert is_odd(4) == False, "is_odd test 2 failed"
+
+
+print(is_odd(3))  # Output: True
+print(is_odd(4))  # Output: False
