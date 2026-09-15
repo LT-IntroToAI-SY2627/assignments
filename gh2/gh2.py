@@ -50,10 +50,10 @@ def classify_temp(temp):
     else:
         return "cold"
 
-assert classify_temp(95) == "hot",  "classify_temp test 1 failed"
-assert classify_temp(75) == "warm", "classify_temp test 2 failed"
-assert classify_temp(55) == "cool", "classify_temp test 3 failed"
-assert classify_temp(30) == "cold", "classify_temp test 4 failed"
+assert classify_temp(90) == "hot",  "classify_temp test 1 failed"
+assert classify_temp(70) == "warm", "classify_temp test 2 failed"
+assert classify_temp(50) == "cool", "classify_temp test 3 failed"
+assert classify_temp(0) == "cold", "classify_temp test 4 failed"
 
 
 # =============================================================================
@@ -81,8 +81,8 @@ def getScore(grade):
     
 
 # Write your asserts here:
-assert getScore(95) == "A", "getScore test 1 failed"
-assert getScore(85) == "B", "getScore test 2 failed"
-assert getScore(75) == "C", "getScore test 3 failed"
-assert getScore(65) == "D", "getScore test 4 failed"
-assert getScore(55) == "F", "getScore test 5 failed"
+assert getScore(90) == "A", "getScore test 1 failed"
+assert getScore(80) == "B", "getScore test 2 failed"
+assert getScore(70) == "C", "getScore test 3 failed"
+assert getScore(60) == "D", "getScore test 4 failed"
+assert getScore(50) == "F", "getScore test 5 failed"
