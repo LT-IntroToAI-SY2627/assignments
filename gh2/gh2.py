@@ -73,6 +73,17 @@ assert classify_temp(30) == "cold", "classify_temp test 4 failed"
 #   - At least 2 asserts that test it
 
 # Write your function here:
-
+def is_even(num):
+    if num % 2 == 0:
+        return True
+    else:
+        return False
 
 # Write your asserts here:
+assert is_even(4) == True, "is_even test 1 failed"
+assert is_even(5) == False, "is_even test 2 failed"
+
+print(is_even(4))  # Output: True
+print(is_even(5))  # Output: False
+print(is_odd(4))   # Output: False
+print(is_odd(5))   # Output: True
