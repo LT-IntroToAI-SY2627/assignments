@@ -10,7 +10,13 @@
 
 # Problem 1
 def sum_list(numbers):
-    pass
+    s = 0
+    for num in numbers:
+        s += num
+    return s
+
+assert sum_list([1, 2, 3]) == 6
+assert sum_list([]) == 0
 
 # Problem 2
 def count_above(numbers, threshold):
