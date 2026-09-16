@@ -2,30 +2,31 @@
 
 | Pouch # | Name |
 |---|---|
-| 1 |  |
-| 2 |  |
+| 1 | Efren Albino |
+| 2 | Simona Arsic |
 | 3 |  |
-| 4 |  |
-| 5 | — |
+| 4 | Preston B |
+| 4 | Jhonxel De Jesus |
+| 5 | Alex Johnson |
 | 6 |  |
 | 7 |  |
-| 8 |  |
+| 8 | Connor Darge |
 | 9 |  |
 | 10 |  |
-| 11 |  |
-| 12 |  |
-| 13 |  |
+| 11 | Jackson |
+| 12 | Olivier Kociolek |
+| 13 | Leo Lawrence |
 | 14 |  |
-| 15 |  |
-| 16 |  |
-| 17 |  |
-| 18 |  |
-| 19 |  |
+| 15 | Torin Lee |
+| 16 |Isaac Lewis  |
+| 17 |  Trong Nguyen
+| 18 | Adrian Ojeda |
+| 19 | armandp |
 | 20 |  |
 | 21 |  |
-| 22 |  |
+| 22 | Alison Severin |
 | 23 | Jackson S |
-| 24 |  |
+| 24 |  JacobS|
 | 25 |  |
 | 26 |  |
 | 27 |  |
