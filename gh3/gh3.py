@@ -1,7 +1,7 @@
 # gh3.py
 # GH-3: Loops & Conditionals
 # Introduction to AI | Lane Tech College Prep
-# Name: [Your Name Here]
+# Name: Leo Lawrence 
 
 # =============================================================================
 # IN-CLASS PROBLEMS
@@ -10,7 +10,11 @@
 
 # Problem 1
 def sum_list(numbers):
-    pass
+    for num in numbers:
+        s = 0
+        for num in numbers:
+            s += num
+        return s
 
 # Problem 2
 def count_above(numbers, threshold):
