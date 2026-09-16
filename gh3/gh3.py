@@ -1,7 +1,7 @@
 # gh3.py
 # GH-3: Loops & Conditionals
 # Introduction to AI | Lane Tech College Prep
-# Name: [Your Name Here]
+# Name: [Zoey Brown]
 
 # =============================================================================
 # IN-CLASS PROBLEMS
@@ -10,7 +10,13 @@
 
 # Problem 1
 def sum_list(numbers):
-    pass
+    s = 0
+    for num in numbers:
+        s += num
+    return s
+
+assert sum_list([1, 2, 3]) == 6
+assert sum_list([5, 10, 15]) == 30
 
 # Problem 2
 def count_above(numbers, threshold):
