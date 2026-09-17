@@ -9,8 +9,12 @@
 # =============================================================================
 
 # Problem 1
-def sum_list([1, 2, 3, 4, 5]) ):
-    pass
+def sum_list(numbers):
+    total = 0
+    for n in numbers:
+        total += n
+    return total
+assert sum_list([1, 2, 3, 4, 5]) == 15
 
 # Problem 2
 def count_above(numbers, threshold):
