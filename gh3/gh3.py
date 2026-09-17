@@ -20,7 +20,11 @@ assert sum_list([5, 10, 15]) == 30
 
 # Problem 2
 def count_above(numbers, threshold):
-    pass
+    count = 0
+    for num in numbers:
+        if num > threshold:
+            count += 1
+    return count
 
 # Problem 3
 def categorize_scores(scores):
