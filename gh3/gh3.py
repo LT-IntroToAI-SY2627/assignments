@@ -28,7 +28,19 @@ def count_above(numbers, threshold):
 
 # Problem 3
 def categorize_scores(scores):
-    pass
+    categories = []
+    for score in scores:
+        if score >= 90:
+            categories.append("A")
+        elif score >= 80:
+            categories.append("B")
+        elif score >= 70:
+            categories.append("C")
+        elif score >= 60:
+            categories.append("D")
+        else:
+            categories.append("F")
+    return categories
 
 
 # =============================================================================
