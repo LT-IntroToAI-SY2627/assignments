@@ -1,7 +1,7 @@
 # gh3.py
 # GH-3: Loops & Conditionals
 # Introduction to AI | Lane Tech College Prep
-# Name: [Your Name Here]
+# Name:Emma
 
 # =============================================================================
 # IN-CLASS PROBLEMS
@@ -12,10 +12,18 @@
 def sum_list(numbers):
     pass
 
+
 # Problem 2
 def count_above(numbers, threshold):
-    pass
+    count = 0 
+    for num in numbers:
+        if num > threshold:
+            
+            count += 1
+    return count
 
+    
+assert count_above([1,2,4,6], 4) == 1
 # Problem 3
 def categorize_scores(scores):
     pass
