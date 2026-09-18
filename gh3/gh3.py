@@ -70,8 +70,17 @@ assert revere_list([15, 21, 80, 43]) == [43, 80, 21, 15]
 
 # Problem 5
 def count_vowels(s):
-    pass
+    count = 0
 
+    for letter in s:
+        if letter.lower() in "aeiou":
+            count += 1
+
+            return count
+        
+        print(count_vowels("hello"))
+
+assert count_vowels("Armand") == 2
 assert count_vowels("hello") == 2
 assert count_vowels("aeiou") == 5
 assert count_vowels("gym") == 0
