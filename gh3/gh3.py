@@ -56,12 +56,17 @@ assert categorize_scores([95, 83, 72, 55]) == ["A", "B", "C", "F"]
 
 # Problem 4
 def reverse_list(lst):
-    pass
+    reversed_list = []
+
+    for l in list:
+        reversed_list.insert(0, l)
+
+        return reversed_list
 
 assert reverse_list([1, 2, 3]) == [3, 2, 1]
 assert reverse_list([5]) == [5]
 assert reverse_list([]) == []
-
+assert revere_list([15, 21, 80, 43]) == [43, 80, 21, 15]
 
 # Problem 5
 def count_vowels(s):
