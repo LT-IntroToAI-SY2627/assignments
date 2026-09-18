@@ -18,7 +18,13 @@ assert sum_list([1, 2, 3, 4, 5]) == 15
 
 # Problem 2
 def count_above(numbers, threshold):
-    pass
+    count = 0
+    for n in numbers:
+        if n > threshold:
+            count += 1
+    return count
+assert count_above([1, 5, 3, 8, 2], 4) == 2
+
 
 # Problem 3
 def categorize_scores(scores):
