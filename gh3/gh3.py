@@ -48,7 +48,11 @@ def categorize_scores(scores):
 
 # Problem 4
 def reverse_list(lst):
-    return lst[::-1]
+    reversed_Lst = []
+    for i in range(len(lst) - 1):
+        reversed_Lst.append(lst[len(lst) - 1 - i])
+    return reversed_Lst
+
 
 
 assert reverse_list([1, 2, 3]) == [3, 2, 1]
