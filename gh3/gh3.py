@@ -10,16 +10,41 @@
 
 # Problem 1
 def sum_list(numbers):
-    pass
-
+    total = 0
+    for number in numbers:
+        total += number
+    return total
 # Problem 2
 def count_above(numbers, threshold):
-    pass
+    count = 0
+    for number in numbers:
+        if number > threshold:
+            count += 1
+        return count
+    
+    assert count_above([1, 2, 3, 4, 5], 3) == 2
+    assert count_above([10, 20, 30], 25) == 1
 
 # Problem 3
 def categorize_scores(scores):
-    pass
+    categories = []
+    for score in scores:
+        if score >= 90:
+            categories.append("A")
+        elif score >= 80:
+            categories.append("B")
+        elif score >= 70:
+            categories.append("C")
+        elif score >= 60:
+            categories.append("D")
+        else:
+            categories.append("F")
+    return categories
 
+    assert categorize_scores([95, 82, 76, 61, 50]) == ["A", "B", "C", "D", "F"]
+    assert categorize_scores([100, 85, 70, 55]) == ["A", "B", "C", "F"]
+    print(categorize_scores([90, 80, 70, 60, 50]))  # Output: ['A', 'B', 'C', 'D', 'F']
+    
 
 # =============================================================================
 # INDEPENDENT PROBLEMS
