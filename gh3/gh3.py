@@ -88,8 +88,23 @@ assert count_vowels("gym") == 0
 
 # Problem 6
 def fizzbuzz(n):
-    pass
+    result = []
 
+    for n in range(1, n + 1):
+        if n % 15 == 0:
+            result.append("fizzBuzz")
+        elif n % 3 == 0:
+            result.append("fizz")
+        elif n % 5 == 0:
+            result.append("buzz")
+        else:
+            result.append(n)
+
+    return result
+
+print(fizzbuzz(15))
+
+assert fizzbuzz(33) == [1, 2, "fizz", 4, "buzz", "fizz", 7, 8, "fizz", "buzz", 11, "fizz", 13, 14, "fizzBuzz"]
 assert fizzbuzz(1) == [1]
-assert fizzbuzz(5) == [1, 2, "Fizz", 4, "Buzz"]
-assert fizzbuzz(15)[-1] == "FizzBuzz"
+assert fizzbuzz(5) == [1, 2, "fizz", 4, "buzz"]
+assert fizzbuzz(15)[-1] == "fizzBuzz"
