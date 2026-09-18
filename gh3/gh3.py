@@ -59,6 +59,12 @@ def reverse_list(lst):
     return lst
 # Problem 5
 def count_vowels(s):
+    vowels = "aeiouAEIOU"
+    count = 0
+    for char in s:
+        if char in vowels:
+            count += 1
+    return count
     
 
 assert count_vowels("hello") == 2
