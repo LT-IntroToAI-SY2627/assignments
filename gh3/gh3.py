@@ -26,6 +26,9 @@ def count_above(numbers, threshold):
             count += 1
     return count
 
+assert count_above([1, 2, 3, 4, 5], 3) == 2
+assert count_above([1, 2, 3, 4, 5], 5) == 0
+
 # Problem 3
 def categorize_scores(scores):
     categories = []
@@ -42,6 +45,9 @@ def categorize_scores(scores):
             categories.append("F")
     return categories
 
+assert categorize_scores([95, 85, 75, 65, 55]) == ["A", "B", "C", "D", "F"]
+assert categorize_scores([100, 90, 80, 70, 60]) == ["A", "A", "B", "C", "D"]
+
 
 # =============================================================================
 # INDEPENDENT PROBLEMS
@@ -51,7 +57,7 @@ def categorize_scores(scores):
 
 # Problem 4
 def reverse_list(lst):
-    pass
+    return lst[::-1]
 
 assert reverse_list([1, 2, 3]) == [3, 2, 1]
 assert reverse_list([5]) == [5]
