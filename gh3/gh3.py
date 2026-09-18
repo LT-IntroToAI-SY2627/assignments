@@ -52,8 +52,11 @@ def categorize_scores(scores):
 
 # Problem 4
 def reverse_list(lst):
-
-
+    for i in range(len(lst) // 2):
+        temp = lst[i]
+        lst[i] = lst[len(lst) - 1 - i]
+        lst[len(lst) - 1 - i] = temp
+    return lst
 # Problem 5
 def count_vowels(s):
     
