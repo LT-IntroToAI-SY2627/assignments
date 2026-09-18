@@ -28,7 +28,24 @@ assert count_above([1, 5, 3, 8, 2], 4) == 2
 
 # Problem 3
 def categorize_scores(scores):
-    pass
+    grades = [0]
+
+    for s in scores:
+        if score >= 90:
+            s.append("A")
+        elif score >= 80:
+            s.append("B")
+        elif score >= 70:
+            s.append("C")
+        elif score >= 60:
+            s.append("D")
+        else:
+            s.append("F")
+
+    return grades
+
+assert categorize_scores([95, 83, 72, 55]) == ["A", "B", "C", "F"]
+
 
 
 # =============================================================================
