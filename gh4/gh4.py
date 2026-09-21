@@ -17,15 +17,16 @@ def get_first(lst):
 # Problem 2
 def list_min(lst):
     list_min([3,  1, 4, 1, 5]) -> 1
-    list_min([10, 20, 5)] -> 5
+    list_min([10, 20, 5]) -> 5
     list_min([7]) -> 7
 
 
 
 # Problem 3
 def sum_positive(lst):
-    pass
-
+    sum_positive([1, -2, 3, -4, 5]) -> -9
+    sum_positive([-1, -2, -3]) -> 0
+    sum_positive([10, 20, 30]) -> 60
 
 # =============================================================================
 # INDEPENDENT PROBLEMS
@@ -35,11 +36,11 @@ def sum_positive(lst):
 
 # Problem 4
 def remove_duplicates(lst):
-    pass
+    
 
 assert remove_duplicates([1, 2, 2, 3, 3, 3]) == [1, 2, 3]
 assert remove_duplicates([1, 1, 1]) == [1]
-assert remove_duplicates([]) == []
+assert remove_duplicates([1, 1, 2, 3, 4, 4, 4]) == [1, 2, 3, 4]
 
 
 # Problem 5
