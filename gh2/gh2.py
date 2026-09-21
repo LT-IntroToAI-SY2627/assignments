@@ -19,7 +19,7 @@
 # multiply(2, 2)  ->  4
 
 def multiply(a, b):
-    pass
+    return a * b
 
 assert multiply(3, 4) == 12, "multiply test 1 failed"
 assert multiply(5, 0) == 0,  "multiply test 2 failed"
@@ -41,7 +41,14 @@ assert multiply(2, 2) == 4,  "multiply test 3 failed"
 # classify_temp(30)  ->  "cold"
 
 def classify_temp(temp):
-    pass
+    if temp >= 90:
+        return "hot"
+    elif temp >= 70:
+        return "warm"
+    elif temp >= 50:
+        return "cool"
+    else:
+        return "cold"
 
 assert classify_temp(95) == "hot",  "classify_temp test 1 failed"
 assert classify_temp(75) == "warm", "classify_temp test 2 failed"
@@ -60,6 +67,12 @@ assert classify_temp(30) == "cold", "classify_temp test 4 failed"
 #   - At least 2 asserts that test it
 
 # Write your function here:
-
+def is_adult(age):
+    if age >= 18:
+        return True
+    else:
+        return False
 
 # Write your asserts here:
+assert is_adult(20) == True, "is_adult test 1 failed"
+assert is_adult(17) == False, "is_adult test 2 failed"
