@@ -1,7 +1,7 @@
 # gh4.py
 # GH-4: Lists
 # Introduction to AI | Lane Tech College Prep
-# Name: [Your Name Here]
+# Name: [Armand Peto]
 
 # =============================================================================
 # IN-CLASS PROBLEMS
@@ -10,12 +10,16 @@
 
 # Problem 1
 def get_first(lst):
-    pass
+    if lst:
+        return lst[0]
+    return None
+print(get_first([1, 2, 3]))  # Output: 1
 
 
 # Problem 2
 def list_min(lst):
     pass
+
 
 
 # Problem 3
