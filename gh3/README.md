@@ -53,7 +53,7 @@ Open `gh3.py` in VS Code and work through the problems.
 ### Problem 1 — `sum_list(numbers)`
 Takes a list of numbers and returns the total sum of all items in the list. Do not use the built-in `sum()` function — use a loop.
 
-```
+```python
 sum_list([1, 2, 3, 4, 5])  ->  15
 sum_list([10, 20])          ->  30
 sum_list([])                ->  0

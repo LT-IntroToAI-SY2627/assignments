@@ -20,11 +20,36 @@ assert sum_list([]) == 0
 
 # Problem 2
 def count_above(numbers, threshold):
-    pass
+    count = 0
+    for num in numbers:
+        if num > threshold:
+            count += 1
+    return count
+
+assert count_above([1, 2, 3, 4, 5], 3) == 2
+assert count_above([1, 2, 3], 5) == 0
+
+print(count_above([1, 2, 3, 4, 5], 3))  # Output: 2
 
 # Problem 3
 def categorize_scores(scores):
-    pass
+    categories = []
+    for score in scores:
+        if score >= 90:
+            categories.append("A")
+        if 80 <= score < 90:
+            categories.append("B")
+        if 70 <= score < 80:
+            categories.append("C")
+        if 60 <= score < 70:
+            categories.append("D")
+        if score < 60:
+            categories.append("F")
+    return categories
+
+assert categorize_scores([95, 85, 75, 65, 55]) == ["A", "B", "C", "D", "F"]
+assert categorize_scores([100, 90, 80, 70, 60, 50]) == ["A", "A", "B", "C", "D", "F"]
+print(categorize_scores([95, 85, 75, 65, 55]))  # Output: ['A', 'B', 'C', 'D', 'F']
 
 
 # =============================================================================
