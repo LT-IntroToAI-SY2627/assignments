@@ -10,12 +10,12 @@
 
 # Problem 1
 def get_first(lst):
-    pass
-
+    return lst[0]
+    
 
 # Problem 2
 def list_min(lst):
-    pass
+    
 
 
 # Problem 3
