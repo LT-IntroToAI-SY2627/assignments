@@ -28,7 +28,13 @@ assert list_min([-1, -5, 0]) == -5
 
 # Problem 3
 def sum_positive(lst):
-    pass
+    x = 0
+    for i in range(len(lst)):
+        if lst[i] > 0:
+            x += lst[i]
+    return x
+assert sum_positive([1, -2, 3, -4, 5]) == 9
+assert sum_positive([-1, -2, -3]) == 0
 
 
 # =============================================================================
