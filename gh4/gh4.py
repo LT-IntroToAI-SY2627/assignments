@@ -10,7 +10,9 @@
 
 # Problem 1
 def get_first(lst):
-    pass
+    return lst[0]
+assert get_first([1, 2, 3]) == 1
+assert get_first(['a', 'b', 'c']) == 'a'
 
 
 # Problem 2
