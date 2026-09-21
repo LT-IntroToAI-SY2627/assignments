@@ -39,7 +39,17 @@ def sum_positive(lst):
 
 # Problem 4
 def remove_duplicates(lst):
-    pass
+    no_duplicates = []
+    count = 0
+    while count < len(lst):
+        otherCount = 0
+        while otherCount < len(lst):
+            if lst[count] != lst[otherCount]:
+                no_duplicates.append(lst[count])
+            otherCount += 1
+    count += 1
+    return no_duplicates
+            
 
 assert remove_duplicates([1, 2, 2, 3, 3, 3]) == [1, 2, 3]
 assert remove_duplicates([1, 1, 1]) == [1]
