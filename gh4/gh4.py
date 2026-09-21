@@ -52,7 +52,11 @@ assert remove_duplicates([]) == []
 
 # Problem 5
 def every_other(lst):
-    pass
+    output = []
+    for i in range(len(lst)):
+        if i % 2 == 0:
+            output.append(lst[i])
+    return output
 
 assert every_other([1, 2, 3, 4, 5]) == [1, 3, 5]
 assert every_other([10, 20, 30]) == [10, 30]
