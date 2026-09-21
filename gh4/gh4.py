@@ -72,7 +72,12 @@ assert every_other([]) == []
 
 # Problem 6
 def is_sorted(lst):
-    pass
+    count = 0
+    while count < len(lst):
+        if lst[count] > lst[count + 1]:
+            return False
+        count += 1
+    return True
 
 assert is_sorted([1, 2, 3, 4, 5]) == True
 assert is_sorted([1, 3, 2, 4, 5]) == False
