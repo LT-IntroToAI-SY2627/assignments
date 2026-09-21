@@ -54,7 +54,10 @@ def categorize_scores(scores):
 
 # Problem 4
 def reverse_list(lst):
-    pass
+    reversed_lst = []
+    for item in lst:
+        reversed_lst.insert(0, item)
+    return reversed_lst
 
 assert reverse_list([1, 2, 3]) == [3, 2, 1]
 assert reverse_list([5]) == [5]
@@ -63,7 +66,12 @@ assert reverse_list([]) == []
 
 # Problem 5
 def count_vowels(s):
-    pass
+    vowels = "aeiouAEIOU"
+    count = 0
+    for char in s:
+        if char in vowels:
+            count += 1
+    return count
 
 assert count_vowels("hello") == 2
 assert count_vowels("aeiou") == 5
@@ -72,7 +80,17 @@ assert count_vowels("gym") == 0
 
 # Problem 6
 def fizzbuzz(n):
-    pass
+    result = []
+    for i in range(1, n + 1):
+        if i % 3 == 0 and i % 5 == 0:
+            result.append("FizzBuzz")
+        elif i % 3 == 0:
+            result.append("Fizz")
+        elif i % 5 == 0:
+            result.append("Buzz")
+        else:
+            result.append(i)
+    return result
 
 assert fizzbuzz(1) == [1]
 assert fizzbuzz(5) == [1, 2, "Fizz", 4, "Buzz"]
