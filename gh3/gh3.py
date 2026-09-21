@@ -69,11 +69,18 @@ assert reverse_list(["a", "b", "c"]) == ["c", "b", "a"]
 
 # Problem 5
 def count_vowels(s):
-    pass
+    vowels = "aeiouyAEIOUY"
+    count = 0
+    for char in s:
+        if char in vowels:
+            count += 1
+    return count
 
 assert count_vowels("hello") == 2
 assert count_vowels("aeiou") == 5
-assert count_vowels("gym") == 0
+assert count_vowels("gym") == 1
+assert count_vowels("") == 0
+assert count_vowels("The quick brown fox jumps over the lazy dog") == 11
 
 
 # Problem 6
