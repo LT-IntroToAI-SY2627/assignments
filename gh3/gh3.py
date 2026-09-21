@@ -85,7 +85,17 @@ assert count_vowels("The quick brown fox jumps over the lazy dog") == 11
 
 # Problem 6
 def fizzbuzz(n):
-    pass
+    result = []
+    for i in range(1, n + 1):
+        if i % 3 == 0 and i % 5 == 0:
+            result.append("FizzBuzz")
+        elif i % 3 == 0:
+            result.append("Fizz")
+        elif i % 5 == 0:
+            result.append("Buzz")
+        else:
+            result.append(i)
+    return result
 
 assert fizzbuzz(1) == [1]
 assert fizzbuzz(5) == [1, 2, "Fizz", 4, "Buzz"]
