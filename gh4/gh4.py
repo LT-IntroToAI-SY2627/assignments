@@ -10,13 +10,19 @@
 
 # Problem 1
 def get_first(lst):
-    pass
-
+    return lst[0]
+assert get_first([1, 2, 3]) == 1
+assert get_first(["a", "b", "c"]) == "a"
 
 # Problem 2
 def list_min(lst):
-    pass
-
+        min = lst[0]
+    for lst in lst:
+        if min < lst:
+            min = lst
+    return min
+assert list_min([3, 1, 4, 1, 5]) == 1
+assert list_min([7]) == 7
 
 # Problem 3
 def sum_positive(lst):
