@@ -15,7 +15,7 @@ def get_first(lst):
 
 # Problem 2
 def list_min(lst):
-    pass
+    return min(lst)
 
 
 # Problem 3
