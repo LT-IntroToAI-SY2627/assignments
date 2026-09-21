@@ -17,7 +17,13 @@ assert get_first(['a', 'b', 'c']) == 'a'
 
 # Problem 2
 def list_min(lst):
-    pass
+    x = lst[0]
+    for i in range(len(lst)):
+        if lst[i] < x:
+            x = lst[i]
+    return x
+assert list_min([3, 1, 4, 1, 5]) == 1
+assert list_min([-1, -5, 0]) == -5
 
 
 # Problem 3
