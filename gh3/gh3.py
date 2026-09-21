@@ -10,23 +10,23 @@
 
 # Problem 1
 def sum_list(numbers):
-    pass
+    total = 0
+    for num in numbers:
+        total += num
+    return total
 
 
 # Problem 2
 def count_above(numbers, threshold):
-    count = 0 
-    for num in numbers:
-        if num > threshold:
-            
-            count += 1
-    return count
+pass
 
     
 assert count_above([1,2,4,6], 4) == 1
 # Problem 3
 def categorize_scores(scores):
-    pass
+    categories = {"A": 0, "B": 0, "C": 0, "D": 0, "F": 0}
+    for score in scores:
+  pass
 
 
 # =============================================================================
@@ -37,7 +37,7 @@ def categorize_scores(scores):
 
 # Problem 4
 def reverse_list(lst):
-    pass
+   pass
 
 assert reverse_list([1, 2, 3]) == [3, 2, 1]
 assert reverse_list([5]) == [5]
