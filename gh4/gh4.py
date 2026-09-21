@@ -11,12 +11,12 @@
 # Problem 1
 def get_first(lst):
     return lst[0]
-
+assert get_first([1, 2, 3]) == 1
 
 # Problem 2
 def list_min(lst):
     return min(lst)
-
+assert list_min([3, 1, 4, 1, 5]) == 1
 
 # Problem 3
 def sum_positive(lst):
@@ -25,7 +25,8 @@ def sum_positive(lst):
         if num > 0:
             total += num
     return total
-
+assert sum_positive([1, -2, 3, -4, 5]) == 9
+    
 
 # =============================================================================
 # INDEPENDENT PROBLEMS
