@@ -10,13 +10,21 @@
 
 # Problem 1
 def get_first(lst):
-    pass
-
+   if lst:
+       return lst[0]
+   return None
+print(get_first([1, 2, 3]))  # Output: 1
 
 # Problem 2
 def list_min(lst):
-    pass
-
+    if not lst:
+        return None
+    smallest = lst[0]
+    for num in lst:
+        if num < smallest:
+            smallest = num
+    return smallest
+print(list_min([3, 1, 4, 1, 5]))
 
 # Problem 3
 def sum_positive(lst):
