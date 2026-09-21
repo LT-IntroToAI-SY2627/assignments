@@ -35,7 +35,11 @@ def sum_positive(lst):
 
 # Problem 4
 def remove_duplicates(lst):
-    pass
+    unique_lst = []
+    for item in lst:
+        if item not in unique_lst:
+            unique_lst.append(item)
+    return unique_lst
 
 assert remove_duplicates([1, 2, 2, 3, 3, 3]) == [1, 2, 3]
 assert remove_duplicates([1, 1, 1]) == [1]
