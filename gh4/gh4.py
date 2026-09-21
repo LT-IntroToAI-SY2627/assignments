@@ -58,4 +58,4 @@ def is_sorted(lst):
 
 assert is_sorted([1, 2, 3, 4, 5]) == True
 assert is_sorted([1, 3, 2, 4, 5]) == False
-assert is_sorted([2, 5,  7, 9]) == True
+assert is_sorted([2, 5,  7, 9]) == True 
