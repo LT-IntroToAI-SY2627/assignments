@@ -45,7 +45,11 @@ assert sum_positive([-1, -2, -3]) == 0
 
 # Problem 4
 def remove_duplicates(lst):
-    pass
+    new_list = []
+    for i in lst:
+        if i not in new_list:
+            new_list.append(i)
+    return new_list
 
 assert remove_duplicates([1, 2, 2, 3, 3, 3]) == [1, 2, 3]
 assert remove_duplicates([1, 1, 1]) == [1]
