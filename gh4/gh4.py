@@ -10,17 +10,25 @@
 
 # Problem 1
 def get_first(lst):
-    pass
+    return lst[0] if lst else None
 
 
 # Problem 2
 def list_min(lst):
-    pass
+    min = lst[0]
+    for num in lst:
+        if num < min:
+            min = num
+    return min
+
 
 
 # Problem 3
 def sum_positive(lst):
-    pass
+    sum = 0
+    for num in lst:
+        if num > 0:
+            sum += num
 
 
 # =============================================================================
@@ -31,7 +39,11 @@ def sum_positive(lst):
 
 # Problem 4
 def remove_duplicates(lst):
-    pass
+    output = []
+    for num in lst:
+        if num not in output:
+            output.append(num)
+    return output
 
 assert remove_duplicates([1, 2, 2, 3, 3, 3]) == [1, 2, 3]
 assert remove_duplicates([1, 1, 1]) == [1]
