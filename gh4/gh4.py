@@ -10,12 +10,16 @@
 
 # Problem 1
 def get_first(lst):
-    pass
+    get_first([10, 20, 30]) -> 10
+    get_first9(["a", "b"]) -> "a"
 
 
 # Problem 2
 def list_min(lst):
-    pass
+    list_min([3,  1, 4, 1, 5]) -> 1
+    list_min([10, 20, 5)] -> 5
+    list_min([7]) -> 7
+
 
 
 # Problem 3
