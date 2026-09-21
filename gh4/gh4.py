@@ -11,11 +11,11 @@
 # Problem 1
 def get_first(lst):
     return lst[0]
-    
+
 
 # Problem 2
 def list_min(lst):
-    
+    pass
 
 
 # Problem 3
