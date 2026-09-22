@@ -16,18 +16,24 @@ assert get_first(["a", "b", "c"]) == "a"
 
 # Problem 2
 def list_min(lst):
-        min = lst[0]
-    for lst in lst:
-        if min < lst:
-            min = lst
+    min = lst[0]
+    for x in lst:
+        if min > x:
+            min = x
     return min
 assert list_min([3, 1, 4, 1, 5]) == 1
 assert list_min([7]) == 7
 
 # Problem 3
 def sum_positive(lst):
-    pass
-
+    total = 0
+    for x in lst:
+        if x > 0:
+            total += x
+    return total
+assert sum_positive([1, -2, 3, -4, 5]) == 9
+assert sum_positive([-1, -2, -3]) == 0
+assert sum_positive([10, 20, 30]) == 60
 
 # =============================================================================
 # INDEPENDENT PROBLEMS
