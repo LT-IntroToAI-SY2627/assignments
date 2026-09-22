@@ -45,11 +45,17 @@ assert sum_positive([-2, -3, -39]) == 0
 
 # Problem 4
 def remove_duplicates(lst):
-   pass
+    return list(dict.fromkeys(lst))
+
+#Example usage:
+numbers = [1, 2, 2, 3, 4, 4, 5]
+result = remove_duplicates(numbers)
+print(result)  # Output: [1, 2, 3, 4, 5]
 
 assert remove_duplicates([1, 2, 2, 3, 3, 3]) == [1, 2, 3]
 assert remove_duplicates([1, 1, 1]) == [1]
 assert remove_duplicates([]) == []
+assert remove_duplicates([7, 8, 4, 5, 2, 1, 2, 4, 5, 6, 8, 4, 3, 3, 2, 9]) == [7, 8, 4, 5, 2, 1, 6, 3, 9]
 
 # Problem 5
 def every_other(lst):
