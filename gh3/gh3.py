@@ -10,7 +10,6 @@
 
 # Problem 1
 def sum_list(numbers):
-    for num in numbers:
         s = 0
         for num in numbers:
             s += num
