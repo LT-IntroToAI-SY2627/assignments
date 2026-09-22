@@ -18,7 +18,11 @@ def sum_list(numbers):
 
 # Problem 2
 def count_above(numbers, threshold):
-pass
+    count = 0
+    for num in numbers:
+        if num > threshold:
+            count += 1
+    return count
 
     
 assert count_above([1,2,4,6], 4) == 1
