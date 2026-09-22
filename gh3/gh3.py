@@ -25,21 +25,21 @@ def count_above(numbers, threshold=6):
             count += 1
     return count
 
-assert count_above([1, 2, 3, 4, 5], 3) == 0
-assert count_above([1, 2, 3, 4, 5], 10) == 1
+assert count_above([1, 2, 3, 4, 5], 3) == 2
+assert count_above([1, 2, 3, 4, 5], 10) == 0
 
 
 # Problem 3
 def categorize_scores(scores):
     categories = []
     for score in scores:
-        if score >= 90:
+        if score >= 89.5:
             categories.append("A")
-        if 79.5 <= score < 89.4:
+        elif 79.5 <= score < 89.5:
             categories.append("B")
-        if 69.5 <= score < 79.4:
+        elif 69.5 <= score < 79.5:
             categories.append("C")
-        if 59.5 <= score < 69.4:
+        elif 59.5 <= score < 69.5:
             categories.append("D")
         else:
             categories.append("F")
@@ -80,7 +80,7 @@ assert count_vowels("hello") == 2
 assert count_vowels("aeiou") == 5
 assert count_vowels("gym") == 1
 assert count_vowels("") == 0
-assert count_vowels("The quick brown fox jumps over the lazy dog") == 11
+assert count_vowels("The quick brown fox jumps over the lazy dog") == 12
 
 
 # Problem 6
