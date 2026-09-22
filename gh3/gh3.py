@@ -30,7 +30,17 @@ assert count_above([1,2,4,6], 4) == 1
 def categorize_scores(scores):
     categories = {"A": 0, "B": 0, "C": 0, "D": 0, "F": 0}
     for score in scores:
-  pass
+        if score >= 90:
+            categories["A"] += 1
+        elif score >= 80:
+            categories["B"] += 1
+        elif score >= 70:
+            categories["C"] += 1
+        elif score >= 60:
+            categories["D"] += 1
+        else:
+            categories["F"] += 1
+    return categories
 
 
 # =============================================================================
