@@ -64,8 +64,13 @@ assert every_other([]) == []
 
 # Problem 6
 def is_sorted(lst):
-    pass
+    if len(lst) < 1:
+        return True
+    for i in range(1, len(lst)):
+        if lst[i] < lst[i-1]:
+            return False
+    return True
 
-assert is_sorted([1, 2, 3, 4, 5]) == True
-assert is_sorted([1, 3, 2, 4, 5]) == False
-assert is_sorted([]) == True
+print(is_sorted([1, 2, 3, 4, 5]))
+print(is_sorted([1, 3, 2, 4, 5]))
+print(is_sorted([]))
