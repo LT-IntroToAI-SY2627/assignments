@@ -15,7 +15,6 @@ def sum_list(numbers):
         total += num
     return total
 
-       
 
 # Problem 2
 def count_above(numbers, threshold):
@@ -27,21 +26,19 @@ def count_above(numbers, threshold):
 
 # Problem 3
 def categorize_scores(scores):
-    categories = []
+    catagories = []
     for score in scores:
         if score >= 90:
-            categories.append("A")
+            catagories.append("A")
         elif score >= 80:
-            categories.append("B")
+            catagories.append("B")
         elif score >= 70:
-            categories.append("C")
+            catagories.append("C")
         elif score >= 60:
-            categories.append("D")
+            catagories.append("D")
         else:
-            categories.append("F")
-    
-
-
+            catagories.append("F")
+    return catagories
 
 
 # =============================================================================
@@ -57,6 +54,12 @@ def reverse_list(lst):
         lst[i] = lst[len(lst) - 1 - i]
         lst[len(lst) - 1 - i] = temp
     return lst
+
+assert reverse_list([1, 2, 3]) == [3, 2, 1]
+assert reverse_list([5]) == [5]
+assert reverse_list([]) == []
+
+
 # Problem 5
 def count_vowels(s):
     vowels = "aeiouAEIOU"
@@ -65,8 +68,7 @@ def count_vowels(s):
         if char in vowels:
             count += 1
     return count
-    
-
+ 
 assert count_vowels("hello") == 2
 assert count_vowels("aeiou") == 5
 assert count_vowels("gym") == 0
@@ -85,8 +87,7 @@ def fizzbuzz(n):
         else:
             result.append(i)
     return result
-    
-
+ 
 assert fizzbuzz(1) == [1]
 assert fizzbuzz(5) == [1, 2, "Fizz", 4, "Buzz"]
 assert fizzbuzz(15)[-1] == "FizzBuzz"
