@@ -31,8 +31,11 @@ print(list_min([3, 1, 4, 1, 5]))  # Output: 1
 
 # Problem 3
 def sum_positive(lst):
-    pass
+    return sum(n for n in lst if n > 0)
+result = sum_positive([1, -2, 3, -4, 5])
+print(result)  # Output: 9 (1 + 3 + 5 = 9)
 
+assert sum_positive([-2, -3, -39]) == 0
 
 # =============================================================================
 # INDEPENDENT PROBLEMS
@@ -42,12 +45,11 @@ def sum_positive(lst):
 
 # Problem 4
 def remove_duplicates(lst):
-    pass
+   pass
 
 assert remove_duplicates([1, 2, 2, 3, 3, 3]) == [1, 2, 3]
 assert remove_duplicates([1, 1, 1]) == [1]
 assert remove_duplicates([]) == []
-
 
 # Problem 5
 def every_other(lst):
