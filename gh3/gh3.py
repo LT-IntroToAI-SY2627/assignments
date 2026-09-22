@@ -25,20 +25,19 @@ def count_above(numbers, threshold):
 
 # Problem 3
 def categorize_scores(scores):
-    categories = {"A": 0, "B": 0, "C": 0, "D": 0, "F": 0}
-    for score in scores:
-        if score >= 90:
-            categories["A"] += 1
-        elif score >= 80:
-            categories["B"] += 1
-        elif score >= 70:
-            categories["C"] += 1
-        elif score >= 60:
-            categories["D"] += 1
+    letterscores = []
+    for num in scores:
+        if num >= 90:
+            letterscores.append("A")
+        elif num >= 80 and num < 90:
+            letterscores.append("B")
+        elif num >= 70 and num < 80:
+            letterscores.append("C")
+        elif num >= 60 and num < 70:
+            letterscores.append("D")
         else:
-            categories["F"] += 1
-    return categories
-
+            letterscores.append("F")
+    return letterscores
 
 # =============================================================================
 # INDEPENDENT PROBLEMS
@@ -48,10 +47,10 @@ def categorize_scores(scores):
 
 # Problem 4
 def reverse_list(lst):
-    revered = []
+    reversed_list = []
     for item in lst:
-        revered.insert(0, item)
-    return revered
+        reversed_list.insert(0, item)
+    return reversed_list
 
 assert reverse_list([1, 2, 3]) == [3, 2, 1]
 assert reverse_list([5]) == [5]
