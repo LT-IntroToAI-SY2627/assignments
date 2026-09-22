@@ -43,8 +43,11 @@ assert sum_positive([10, 20, 30]) == 60
 
 # Problem 4
 def remove_duplicates(lst):
-    pass
-
+    result = []
+    for item in lst:
+        if item not in result:
+            result.append(item)
+    return result
 assert remove_duplicates([1, 2, 2, 3, 3, 3]) == [1, 2, 3]
 assert remove_duplicates([1, 1, 1]) == [1]
 assert remove_duplicates([]) == []
@@ -52,8 +55,12 @@ assert remove_duplicates([]) == []
 
 # Problem 5
 def every_other(lst):
-    pass
-
+    result = []
+    if lst[0] % 2 == 0:
+        result = lst[::2]
+    else:
+        result = lst[::1]
+    return result
 assert every_other([1, 2, 3, 4, 5]) == [1, 3, 5]
 assert every_other([10, 20, 30]) == [10, 30]
 assert every_other([]) == []
