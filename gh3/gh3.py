@@ -25,14 +25,14 @@ def count_above(numbers, threshold):
 
 # Problem 3
 def categorize_scores(scores):
-    categories = {"low": 0, "medium": 0, "high": 0}
+    categories = []
     for score in scores:
         if score < 50:
-            categories["low"] += 1
+            categories.append("low")
         elif score < 80:
-            categories["medium"] += 1
+            categories.append("medium")
         else:
-            categories["high"] += 1
+            categories.append("high")
     return categories
 
 
