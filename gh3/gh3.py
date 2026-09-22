@@ -30,22 +30,22 @@ assert count_above([1, 5, 3, 8, 2], 4) == 2
 def categorize_scores(scores):
     grades = [0]
 
-    for s in scores:
+    for score in scores:
         if score >= 90:
-            s.append("A")
+            score.append("A")
         elif score >= 80:
-            s.append("B")
+            score.append("B")
         elif score >= 70:
-            s.append("C")
+            score.append("C")
         elif score >= 60:
-            s.append("D")
+            score.append("D")
         else:
-            s.append("F")
+            score.append("F")
 
     return grades
 
 assert categorize_scores([95, 83, 72, 55]) == ["A", "B", "C", "F"]
-
+assert categorize_scores([25, 85, 79.9, 65]) == ["F", "B", "C", "D"])
 
 
 # =============================================================================
@@ -61,7 +61,7 @@ def reverse_list(lst):
     for l in list:
         reversed_list.insert(0, l)
 
-        return reversed_list
+    return reversed_list
 
 assert reverse_list([1, 2, 3]) == [3, 2, 1]
 assert reverse_list([5]) == [5]
@@ -76,15 +76,13 @@ def count_vowels(s):
         if letter.lower() in "aeiou":
             count += 1
 
-            return count
-        
-        print(count_vowels("hello"))
+    return count
 
 assert count_vowels("Armand") == 2
 assert count_vowels("hello") == 2
 assert count_vowels("aeiou") == 5
 assert count_vowels("gym") == 0
-
+assert count_vowels("Entourage") == 4
 
 # Problem 6
 def fizzbuzz(n):
