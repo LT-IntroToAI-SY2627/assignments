@@ -63,7 +63,12 @@ assert reverse_list([]) == []
 
 # Problem 5
 def count_vowels(s):
-    pass
+    vowels = "aeiouAEIOU"
+    count = 0
+    for char in s:
+        if char in vowels:
+            count += 1
+    return count
 
 assert count_vowels("hello") == 2
 assert count_vowels("aeiou") == 5
