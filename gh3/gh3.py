@@ -10,11 +10,10 @@
 
 # Problem 1
 def sum_list(numbers):
+    s = 0
     for num in numbers:
-        s = 0
-        for num in numbers:
-            s += num
-        return s
+        s += num
+    return s
 
 # Problem 2
 def count_above(numbers, threshold):
