@@ -11,17 +11,22 @@
 # Problem 1
 def get_first(lst):
     pass
-
+    get_first([10, 20, 30])  ->  10
+    get_first(["a", "b"])    ->  "a"
 
 # Problem 2
 def list_min(lst):
     pass
-
+list_min([3, 1, 4, 1, 5])  ->  1
+list_min([10, 20, 5])      ->  5
+list_min([7])              ->  7
 
 # Problem 3
 def sum_positive(lst):
     pass
-
+sum_positive([1, -2, 3, -4, 5])  ->  9
+sum_positive([-1, -2, -3])       ->  0
+sum_positive([10, 20, 30])       ->  60
 
 # =============================================================================
 # INDEPENDENT PROBLEMS
