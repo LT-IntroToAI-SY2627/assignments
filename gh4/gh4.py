@@ -20,7 +20,7 @@ def list_min(lst):
 
 # Problem 3
 def sum_positive(lst):
-    pass
+    return sum(x for x in lst if x > 0)
 
 
 # =============================================================================
