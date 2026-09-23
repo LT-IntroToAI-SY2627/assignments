@@ -59,11 +59,13 @@ assert remove_duplicates([7, 8, 4, 5, 2, 1, 2, 4, 5, 6, 8, 4, 3, 3, 2, 9]) == [7
 
 # Problem 5
 def every_other(lst):
-    pass
+    "Takes a list and returns every other item, starting with the first."
+    return lst[::2]
 
 assert every_other([1, 2, 3, 4, 5]) == [1, 3, 5]
 assert every_other([10, 20, 30]) == [10, 30]
 assert every_other([]) == []
+assert every_other([80, 65, 34, 34, 56, 7654, 89102]) == [80, 34, 56, 89102]
 
 
 # Problem 6
