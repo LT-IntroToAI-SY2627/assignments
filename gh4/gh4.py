@@ -31,7 +31,7 @@ def sum_positive(lst):
 
 # Problem 4
 def remove_duplicates(lst):
-    pass
+    return list(dict.fromkeys(lst))
 
 assert remove_duplicates([1, 2, 2, 3, 3, 3]) == [1, 2, 3]
 assert remove_duplicates([1, 1, 1]) == [1]
