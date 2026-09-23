@@ -70,8 +70,13 @@ assert every_other([80, 65, 34, 34, 56, 7654, 89102]) == [80, 34, 56, 89102]
 
 # Problem 6
 def is_sorted(lst):
-    pass
+    "Takes a list and returns True if the list is sorted in ascending order, False otherwise."
+    for i in range(len(lst) - 1):
+        if lst[i] > lst[i + 1]:
+            return False
+    return True
 
 assert is_sorted([1, 2, 3, 4, 5]) == True
 assert is_sorted([1, 3, 2, 4, 5]) == False
 assert is_sorted([]) == True
+assert is_sorted([1, 7,18, 9, 80, 74, 89]) == False
