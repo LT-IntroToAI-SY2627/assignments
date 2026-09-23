@@ -13,7 +13,7 @@ def sum_list(numbers):
     s = 0
     for num in numbers:
         s += num
-    return s
+return s
 
 # Problem 2
 def count_above(numbers, threshold):
@@ -21,7 +21,7 @@ def count_above(numbers, threshold):
     for num in numbers:
         if num > threshold:
             count += 1
-    return count
+return count
 
 # Problem 3
 def categorize_scores(scores):
@@ -37,7 +37,7 @@ def categorize_scores(scores):
             categories.append("D")
         else:
             categories.append("F")
-    return categories
+return categories
 
 
 # =============================================================================
@@ -62,7 +62,7 @@ def count_vowels(s):
     for char in s:
         if char in vowels:
             count += 1
-    return count
+return count
 
 assert count_vowels("hello") == 2
 assert count_vowels("aeiou") == 5
@@ -81,7 +81,7 @@ def fizzbuzz(n):
             result.append("Buzz")
         else:
             result.append(i)
-    return result
+return result
 
 assert fizzbuzz(1) == [1]
 assert fizzbuzz(5) == [1, 2, "Fizz", 4, "Buzz"]
