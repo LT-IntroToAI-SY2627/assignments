@@ -49,7 +49,7 @@ assert every_other([]) == []
 
 # Problem 6
 def is_sorted(lst):
-    pass
+    return lst == sorted(lst)
 
 assert is_sorted([1, 2, 3, 4, 5]) == True
 assert is_sorted([1, 3, 2, 4, 5]) == False
