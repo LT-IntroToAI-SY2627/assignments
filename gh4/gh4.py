@@ -18,7 +18,7 @@ def get_first(lst):
 def list_min(lst):
     list_min([3,  1, 4, 1, 5]) -> 1
     list_min([10, 20, 5]) -> 5
-    list_min([7]) -> 7
+    list_min([7]) -> 7 
 
 
 
