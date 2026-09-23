@@ -35,7 +35,7 @@ def sum_positive(lst):
 # =============================================================================
 
 # Problem 4
-def remove_duplicates(lst):
+def remove_duplicates(lst): 
     
 
 assert remove_duplicates([1, 2, 2, 3, 3, 3]) == [1, 2, 3]
