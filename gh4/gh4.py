@@ -10,7 +10,7 @@
 
 # Problem 1
 def get_first(lst):
-    pass
+    return lst[0] if lst else None
 
 
 # Problem 2
