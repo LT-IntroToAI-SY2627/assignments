@@ -14,7 +14,9 @@ def get_first(lst):
         return lst[0]
     else:
         return None
-
+    
+print(get_first([1,2,3]))
+print(get_first([]))
 
 # Problem 2
 def list_min(lst):
