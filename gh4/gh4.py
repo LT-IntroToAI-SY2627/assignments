@@ -10,7 +10,7 @@
 
 # Problem 1
 def get_first(lst):
-    return lst[0]
+    return lst[0] if lst else None
 assert get_first([1, 2, 3]) == 1
 
 # Problem 2
