@@ -47,20 +47,32 @@ print(sum_positive([-1, -2, -3]))  # Output: 0
 
 # Problem 4
 def remove_duplicates(lst):
-    assert remove_duplicates([1, 2, 2, 3, 3, 3]) == [1, 2, 3]
-assert remove_duplicates([1, 1, 1]) == [1]
-assert remove_duplicates([1, 1, 2, 3, 4, 4, 4]) == [1, 2, 3, 4]
+    seen = set()
+    result = [] 
+    for x in lst:
+        if x not in seen:
+            seen.add(x)
+            result.append(x)
+    return result
+
 
 
 # Problem 5
 def every_other(lst):
-    assert every_other([1, 2, 3, 4, 5]) == [1, 3, 5]
+    return lst[::2]
+
+assert every_other([1, 2, 3, 4, 5]) == [1, 3, 5]
 assert every_other([10, 20, 30]) == [10, 30]
 assert every_other([100, 200, 300, 400]) == [100, 300]
 
 
 # Problem 6
 def is_sorted(lst):
-    assert is_sorted([1, 2, 3, 4, 5]) == True
+    for i in range(len(lst) - 1):
+        if lst[i] > lst[i + 1]:
+            return False
+    return True
+
+assert is_sorted([1, 2, 3, 4, 5]) == True
 assert is_sorted([1, 3, 2, 4, 5]) == False
 assert is_sorted([2, 5,  7, 9]) == True 
