@@ -28,6 +28,7 @@ def list_min(lst):
         return minimum
     else:
         return None
+print(list_min([]))
 
 
 # Problem 3
