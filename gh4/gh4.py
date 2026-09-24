@@ -26,6 +26,7 @@ def list_min(lst):
     return min_value
 
 print(list_min([3, 1, 4, 1, 5]))  # Output: 1
+print(list_min([-2, -5, -1]))      # Output: -5
 print(list_min([]))                # Output: None
 
 # Problem 3
