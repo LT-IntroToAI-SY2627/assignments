@@ -15,7 +15,7 @@ assert get_first([1, 2, 3]) == 1
 
 # Problem 2
 def list_min(lst):
-    return min(lst)
+    return min(lst) if lst else None
 assert list_min([3, 1, 4, 1, 5]) == 1
 
 # Problem 3
