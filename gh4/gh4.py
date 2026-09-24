@@ -10,13 +10,20 @@
 
 # Problem 1
 def get_first(lst):
-    get_first([10, 20, 30]) -> 10
-    get_first9(["a", "b"]) -> "a"
+    return lst[0] if lst else None
 
+print(get_first([1, 2, 3]))  # Output: 1
+print(get_first([]))         # Output: None
 
 # Problem 2
 def list_min(lst):
-    list_min([3,  1, 4, 1, 5]) -> 1
+    if not lst:
+        return None
+    min_val = lst[0]
+    for x in lst[1:]:
+        if x < min_val:
+            min_val = x
+    return min_val
     list_min([10, 20, 5]) -> 5
     list_min([7]) -> 7 
 
