@@ -33,9 +33,14 @@ def list_min(lst):
 
 # Problem 3
 def sum_positive(lst):
-    sum_positive([1, -2, 3, -4, 5]) -> -9
-    sum_positive([-1, -2, -3]) -> 0
-    sum_positive([10, 20, 30]) -> 60
+    total = 0
+    for num in lst: 
+        if num > 0:
+            total += num
+    return total
+
+print(sum_positive([1, -2, 3, -4, 5]))  # Output: 9
+print(sum_positive([-1, -2, -3]))        # Output: 0
 
 # =============================================================================
 # INDEPENDENT PROBLEMS
