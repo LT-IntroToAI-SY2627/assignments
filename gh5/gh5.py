@@ -9,8 +9,9 @@
 # =============================================================================
 
 # Problem 1
-def make_greeting(name):
-    pass
+def make_greeting(name: str) -> str:
+    return f"Hello, {name}!"
+print(make_greeting("Jhonxel"))
 
 
 # Problem 2
