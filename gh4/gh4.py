@@ -49,26 +49,34 @@ print (sum_positive([-1, -2, -3]))      # Output: 0
 
 # Problem 4
 def remove_duplicates(lst):
-    pass
+    seen = set()
+    result = []
+    for item in lst:
+        if item not in seen:
+            seen.add(item)
+            result.append(item)
+    return result
 
-assert remove_duplicates([1, 2, 2, 3, 3, 3]) == [1, 2, 3]
-assert remove_duplicates([1, 1, 1]) == [1]
-assert remove_duplicates([]) == []
-
+print (remove_duplicates([1, 2, 2, 3, 3, 3]))  # Output: [1, 2, 3]
+print (remove_duplicates([1, 1, 1]))            # Output: [1]
+print (remove_duplicates([]))                   # Output: []
 
 # Problem 5
 def every_other(lst):
-    pass
+    return lst[::2]
 
-assert every_other([1, 2, 3, 4, 5]) == [1, 3, 5]
-assert every_other([10, 20, 30]) == [10, 30]
-assert every_other([]) == []
+print (every_other([1, 2, 3, 4, 5]))  # Output: [1, 3, 5]
+print (every_other([10, 20, 30]))     # Output: [10, 30]
+print (every_other([]))                # Output: []
 
 
 # Problem 6
 def is_sorted(lst):
-    pass
+    for i in range(1, len(lst)):
+        if lst[i] < lst[i-1]:
+            return False
+    return True
 
-assert is_sorted([1, 2, 3, 4, 5]) == True
-assert is_sorted([1, 3, 2, 4, 5]) == False
-assert is_sorted([]) == True
+print (is_sorted([1, 2, 3, 4, 5]))  # Output: True
+print (is_sorted([1, 3, 2, 4, 5]))  # Output: False
+print (is_sorted([]))               # Output: True
