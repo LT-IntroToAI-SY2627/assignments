@@ -21,13 +21,15 @@ print(get_first([]))
 # Problem 2
 def list_min(lst):
     if lst:
-        minimum = lst[0]
-        for item in lst:
-            if item < minimum:
-                minimum = item
-        return minimum
+        min_value = lst[0]
+        for num in lst:
+            if num < min_value:
+                min_value = num
+        return min_value
     else:
         return None
+    
+print(list_min([5, 2, 8, 1, 9]))
 print(list_min([]))
 
 
@@ -41,6 +43,9 @@ def sum_positive(lst):
         return total
     else:
         return 0
+    
+print(sum_positive([1, -2, 3, -4, 5]))
+print(sum_positive([-1, 2, -3]))
 
 
 # =============================================================================
