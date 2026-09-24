@@ -17,15 +17,17 @@ print(get_first([]))         # Output: None
 
 # Problem 2
 def list_min(lst):
-    if not lst:
+    if len(lst) == 0:
         return None
     min_val = lst[0]
-    for x in lst[1:]:
+    for num in lst:
         if x < min_val:
             min_val = x
-    return min_val
-    list_min([10, 20, 5]) -> 5
-    list_min([7]) -> 7 
+    return min_val 
+   
+    print(list_min([3, 1, 4, 1, 5]))  # Output: 1
+    print(list_min([]))               # Output: None
+
 
 
 
