@@ -5,7 +5,7 @@
 
 # =============================================================================
 # IN-CLASS PROBLEMS
-# Work through these together in class.
+# Work through these together in class
 # =============================================================================
 
 # Problem 1
