@@ -10,9 +10,10 @@
 
 # Problem 1
 def get_first(lst):
-    pass
+    return lst[0] if lst else None
 
-
+print(get_first([1, 2, 3]))  # Output: 1
+print(get_first([]))        # Output: None
 # Problem 2
 def list_min(lst):
     pass
