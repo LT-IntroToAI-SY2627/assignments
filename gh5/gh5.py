@@ -15,8 +15,9 @@ print(make_greeting("Jhonxel"))
 
 
 # Problem 2
-def clean_input(text):
-    pass
+def clean_input(text: str) -> str:
+    return text.strip().lower()
+print(clean_input("   Hello World!   How many pizzas can you eat?   "))
 
 
 # =============================================================================
