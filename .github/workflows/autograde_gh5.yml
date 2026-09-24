@@ -1,0 +1,44 @@
+name: GH-5 Autograder
+
+on:
+  push:
+    branches:
+      - 'gh5-*'
+
+jobs:
+  autograde:
+    runs-on: ubuntu-latest
+    name: Run GH-5 Tests
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Test Problem 3 - count_words
+        continue-on-error: true
+        working-directory: gh5
+        run: |
+          python -c "
+          from gh5 import count_words
+          assert count_words('hello world') == 2, 'count_words(hello world) should return 2'
+          assert count_words('Lane Tech College Prep') == 4, 'count_words(Lane Tech College Prep) should return 4'
+          assert count_words('') == 0, 'count_words empty string should return 0'
+          print('Problem 3 - count_words: PASSED')
+          "
+
+      - name: Test Problem 4 - initials
+        continue-on-error: true
+        working-directory: gh5
+        run: |
+          python -c "
+          from gh5 import initials
+          assert initials('Alex Johnson') == 'A.J.', 'initials(Alex Johnson) should return A.J.'
+          assert initials('Mr. Berg') == 'M.B.', 'initials(Mr. Berg) should return M.B.'
+          assert initials('Lane Tech College Prep') == 'L.T.C.P.', 'initials(Lane Tech College Prep) should return L.T.C.P.'
+          print('Problem 4 - initials: PASSED')
+          "
