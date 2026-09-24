@@ -10,20 +10,34 @@
 
 # Problem 1
 def get_first(lst):
-      get_first([10, 20, 30]) -> 10
-    get_first9(["a", "b"]) -> "a"
+    return lst[0] if lst else None
+
+print(get_first([1, 2, 3]))  # Output: 1
+print (get_first([]))         # Output: None
 
 # Problem 2
 def list_min(lst):
-    list_min([3,  1, 4, 1, 5]) -> 1
-    list_min([10, 20, 5]) -> 5
-    list_min([7]) -> 7
+    if not lst:
+        return None
+    min_value = lst[0]
+    for x in lst:
+        if x < min_value:
+            min_value = x
+    return min_value
+
+print(list_min([3, 1, 4, 1, 5]))  # Output: 1
+print(list_min([]))                # Output: None
 
 # Problem 3
 def sum_positive(lst):
-    sum_positive([1, -2, 3, -4, 5]) -> -9
-    sum_positive([-1, -2, -3]) -> 0
-    sum_positive([10, 20, 30]) -> 60
+    total = 0
+    for x in lst:
+        if x > 0:
+            total += x
+    return total
+
+print(sum_positive([1, -2, 3, 4]))  # Output: 8
+print(sum_positive([-1, -2, -3]))  # Output: 0
 
 # =============================================================================
 # INDEPENDENT PROBLEMS
