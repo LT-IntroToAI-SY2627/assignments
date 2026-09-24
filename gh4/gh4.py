@@ -50,7 +50,7 @@ print(sum_positive([-1, -2, -3]))        # Output: 0
 
 # Problem 4
 def remove_duplicates(lst): 
-    
+    return list(set(lst))
 
 assert remove_duplicates([1, 2, 2, 3, 3, 3]) == [1, 2, 3]
 assert remove_duplicates([1, 1, 1]) == [1]
@@ -68,7 +68,7 @@ assert every_other([100, 200, 300, 400]) == [100, 300]
 
 # Problem 6
 def is_sorted(lst):
-    pass
+    return lst == sorted(lst)
 
 assert is_sorted([1, 2, 3, 4, 5]) == True
 assert is_sorted([1, 3, 2, 4, 5]) == False
