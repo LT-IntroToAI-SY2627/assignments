@@ -10,12 +10,12 @@
 
 # Problem 1
 def make_greeting(name):
-    pass
+    return "Hello " + name + "!"
 
 
 # Problem 2
 def clean_input(text):
-    pass
+    return text.strip().lower() # Strip function removes trailing/leadingwhitespace, lower converts to lowercase 
 
 
 # =============================================================================
@@ -26,7 +26,7 @@ def clean_input(text):
 
 # Problem 3
 def count_words(text):
-    pass
+    return len(text.split()) # Split function returns list of substrings separated by a deliminator (default space)
 
 assert count_words("hello world") == 2
 assert count_words("Lane Tech College Prep") == 4
@@ -35,7 +35,11 @@ assert count_words("") == 0
 
 # Problem 4
 def initials(full_name):
-    pass
+    output = ""
+    names = full_name.split()
+    for name in names:
+        output += name[0].upper() + "."
+    return output
 
 assert initials("Alex Johnson") == "A.J."
 assert initials("Mr. Berg") == "M.B."
