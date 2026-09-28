@@ -1,7 +1,7 @@
 # gh5.py
 # GH-5: String Manipulation
 # Introduction to AI | Lane Tech College Prep
-# Name: [Your Name Here]
+# Name: [Jhonxel De Jesus]
 
 # =============================================================================
 # IN-CLASS PROBLEMS
@@ -10,7 +10,7 @@
 
 # Problem 1
 def make_greeting(name: str) -> str:
-    return f"Hello, {name}!"
+    return f"Hello {name}, welcome to the Lane Tech Info Bot!"
 print(make_greeting("Jhonxel"))
 
 
@@ -28,10 +28,15 @@ print(clean_input("   Hello World!   How many pizzas can you eat?   "))
 
 # Problem 3
 def count_words(text):
-    pass
+    if text == "":
+        return 0
+    else:
+        return len(text.split())
 
 assert count_words("hello world") == 2
+print(count_words("hello world"))
 assert count_words("Lane Tech College Prep") == 4
+print(count_words("Lane Tech College Prep"))
 assert count_words("") == 0
 
 
