@@ -21,8 +21,8 @@ def list_min(lst):
         return None
     min_val = lst[0]
     for num in lst:
-        if x < min_val:
-            min_val = x
+        if num < min_val:
+            min_val = num
     return min_val 
    
     print(list_min([3, 1, 4, 1, 5]))  # Output: 1
@@ -59,7 +59,7 @@ assert remove_duplicates([1, 1, 2, 3, 4, 4, 4]) == [1, 2, 3, 4]
 
 # Problem 5
 def every_other(lst):
-    
+    return lst[::2]
 
 assert every_other([1, 2, 3, 4, 5]) == [1, 3, 5]
 assert every_other([10, 20, 30]) == [10, 30]
