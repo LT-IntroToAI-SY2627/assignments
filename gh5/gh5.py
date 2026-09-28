@@ -29,7 +29,7 @@ print(clean_input("  HELLO WORLD  "))  # Output: "hello world"
 
 # Problem 3
 def count_words(text):
-    pass
+    return len(text.split())
 
 assert count_words("hello world") == 2
 assert count_words("Lane Tech College Prep") == 4
