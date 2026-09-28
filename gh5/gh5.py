@@ -26,7 +26,9 @@ def clean_input(text):
 
 # Problem 3
 def count_words(text):
-    pass
+    if not text:
+        return 0
+    return len(text.split())
 
 assert count_words("hello world") == 2
 assert count_words("Lane Tech College Prep") == 4
