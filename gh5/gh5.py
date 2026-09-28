@@ -10,7 +10,7 @@
 
 # Problem 1
 def make_greeting(name):
-    pass
+    return f"Hey {name}, welcome to the Lane Tech Info Bot"
 
 
 # Problem 2
