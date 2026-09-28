@@ -16,7 +16,9 @@ print(make_greeting("Efren"))  # Output: "Hey, Efren, welcome to the Lane Tech I
 
 # Problem 2
 def clean_input(text):
-    pass
+    return text.strip().lower()
+
+print(clean_input("  HELLO WORLD  "))  # Output: "hello world"
 
 
 # =============================================================================
