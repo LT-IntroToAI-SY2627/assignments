@@ -11,23 +11,24 @@
 # Problem 1
 def get_first(lst):
     return lst[0]
+    return lst[0]
 
 
 # Problem 2
 def list_min(lst):
     smallest = lst[0]
-    for num in lst[1:]:
-        if num < smallest:
-            smallest = num
+    for number in lst[1:]:
+        if number < smallest:
+            smallest = number
     return smallest
 
 
 # Problem 3
 def sum_positive(lst):
     total = 0
-    for num in lst:
-        if num > 0:
-            total += num
+    for number in lst:
+        if number > 0:
+            total += number
     return total
 
 
@@ -39,11 +40,7 @@ def sum_positive(lst):
 
 # Problem 4
 def remove_duplicates(lst):
-    unique = []
-    for item in lst:
-        if item not in unique:
-            unique.append(item)
-    return unique
+    pass
 
 assert remove_duplicates([1, 2, 2, 3, 3, 3]) == [1, 2, 3]
 assert remove_duplicates([1, 1, 1]) == [1]
@@ -61,8 +58,10 @@ assert every_other([]) == []
 
 # Problem 6
 def is_sorted(lst):
-    for i in range(len(lst) - 1):
-        if lst[i] > lst[i + 1]:
+    if len(lst) <= 1:
+        return True
+    for i in range(1, len(lst)):
+        if lst[i] < lst[i - 1]:
             return False
     return True
 
