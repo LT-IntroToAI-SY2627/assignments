@@ -10,12 +10,16 @@
 
 # Problem 1
 def get_first(lst):
-    pass
+    return lst[0]
 
 
 # Problem 2
 def list_min(lst):
-    pass
+    smallest = lst[0]
+    for num in lst[1:]:
+        if num < smallest:
+            smallest = num
+    return smallest
 
 
 # Problem 3
