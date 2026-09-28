@@ -38,7 +38,7 @@ assert count_words("") == 0
 
 # Problem 4
 def initials(full_name):
-    pass
+    return '.'.join([name[0].upper() for name in full_name.split()]) + '.'
 
 assert initials("Alex Johnson") == "A.J."
 assert initials("Mr. Berg") == "M.B."
