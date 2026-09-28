@@ -11,7 +11,6 @@
 # Problem 1
 def get_first(lst):
     return lst[0]
-    return lst[0]
 
 
 # Problem 2
