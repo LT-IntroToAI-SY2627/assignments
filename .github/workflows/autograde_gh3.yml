@@ -1,0 +1,56 @@
+name: GH-3 Autograder
+
+on:
+  push:
+    branches:
+      - 'gh3-*'
+
+jobs:
+  autograde:
+    runs-on: ubuntu-latest
+    name: Run GH-3 Tests
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Test Problem 4 - reverse_list
+        continue-on-error: true
+        working-directory: gh3
+        run: |
+          python -c "
+          from gh3 import reverse_list
+          assert reverse_list([1, 2, 3]) == [3, 2, 1], 'reverse_list([1,2,3]) should return [3,2,1]'
+          assert reverse_list([5]) == [5], 'reverse_list([5]) should return [5]'
+          assert reverse_list([]) == [], 'reverse_list([]) should return []'
+          print('Problem 4 - reverse_list: PASSED')
+          "
+
+      - name: Test Problem 5 - count_vowels
+        continue-on-error: true
+        working-directory: gh3
+        run: |
+          python -c "
+          from gh3 import count_vowels
+          assert count_vowels('hello') == 2, 'count_vowels(hello) should return 2'
+          assert count_vowels('aeiou') == 5, 'count_vowels(aeiou) should return 5'
+          assert count_vowels('gym') == 0, 'count_vowels(gym) should return 0'
+          print('Problem 5 - count_vowels: PASSED')
+          "
+
+      - name: Test Problem 6 - fizzbuzz
+        continue-on-error: true
+        working-directory: gh3
+        run: |
+          python -c "
+          from gh3 import fizzbuzz
+          assert fizzbuzz(1) == [1], 'fizzbuzz(1) should return [1]'
+          assert fizzbuzz(5) == [1, 2, 'Fizz', 4, 'Buzz'], 'fizzbuzz(5) failed'
+          assert fizzbuzz(15)[-1] == 'FizzBuzz', 'fizzbuzz(15) last item should be FizzBuzz'
+          print('Problem 6 - fizzbuzz: PASSED')
+          "
