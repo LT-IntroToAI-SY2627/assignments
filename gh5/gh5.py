@@ -15,7 +15,7 @@ def make_greeting(name):
 
 # Problem 2
 def clean_input(text):
-    pass
+    
 
 
 # =============================================================================
