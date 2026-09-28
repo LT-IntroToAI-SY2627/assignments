@@ -1,7 +1,7 @@
 # gh5.py
 # GH-5: String Manipulation
 # Introduction to AI | Lane Tech College Prep
-# Name: [Your Name Here]
+# Name: Mr. Berg
 
 # =============================================================================
 # IN-CLASS PROBLEMS
@@ -10,14 +10,16 @@
 
 # Problem 1
 def make_greeting(name):
-    pass
+    return f"Hey {name}, welcome to the Lane Tech Info Bot!"
 
+print(make_greeting("Alex"))
 
 # Problem 2
 def clean_input(text):
-    pass
+    return text.strip().lower()
 
-
+print(" \n  Hello World!   ")
+print(clean_input(" \n  Hello World!   "))
 # =============================================================================
 # INDEPENDENT PROBLEMS
 # Complete these on your own.
