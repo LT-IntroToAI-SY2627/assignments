@@ -10,8 +10,9 @@
 
 # Problem 1
 def make_greeting(name):
-    pass
+    return f"Hey, {name}, welcome to the Lane Tech Info bot!"
 
+print(make_greeting("Efren"))  # Output: "Hey, Efren, welcome to the Lane Tech Info bot!"
 
 # Problem 2
 def clean_input(text):
