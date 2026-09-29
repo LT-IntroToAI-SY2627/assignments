@@ -1,7 +1,7 @@
 # gh5.py
 # GH-5: String Manipulation
 # Introduction to AI | Lane Tech College Prep
-# Name: [Your Name Here]
+# Name: [Zoey]
 
 # =============================================================================
 # IN-CLASS PROBLEMS
@@ -29,7 +29,9 @@ print(clean_input(" \n  Hello World!   "))
 
 # Problem 3
 def count_words(text):
-    pass
+    if not text:
+        return 0
+    return len(text.split())
 
 assert count_words("hello world") == 2
 assert count_words("Lane Tech College Prep") == 4
