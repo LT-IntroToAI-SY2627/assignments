@@ -10,17 +10,33 @@
 
 # Problem 1
 def get_first(lst):
-    pass
+    return lst[0] if lst else None
 
-
+print(get_first([1, 2, 3]))  # Output: 1
+print(get_first([]))        # Output: None
 # Problem 2
 def list_min(lst):
-    pass
+    def list_min(lst):
+        if not lst:
+            return None
+        min_value = lst[0]
+        for num in lst:
+            if num < min_value:
+                min_value = num
+        return min_value
+    print(list_min([3, 1, 4, 1, 5, 9]))  # Output: 1
+    print(list_min([]))                  # Output: None
 
 
 # Problem 3
 def sum_positive(lst):
-    pass
+    total = 0
+    for num in lst:
+        if num > 0:
+            total += num
+    return total
+print(sum_positive([1, -2, 3, -4, 5]))  # Output: 9
+print(sum_positive([-1, -2, -3]))     # Output: 0
 
 
 # =============================================================================
@@ -31,7 +47,13 @@ def sum_positive(lst):
 
 # Problem 4
 def remove_duplicates(lst):
-    pass
+    seen = set()
+    result = []
+    for item in lst:
+        if item not in seen:
+            seen.add(item)
+            result.append(item)
+    return result
 
 assert remove_duplicates([1, 2, 2, 3, 3, 3]) == [1, 2, 3]
 assert remove_duplicates([1, 1, 1]) == [1]
@@ -40,7 +62,7 @@ assert remove_duplicates([]) == []
 
 # Problem 5
 def every_other(lst):
-    pass
+    return lst[::2]
 
 assert every_other([1, 2, 3, 4, 5]) == [1, 3, 5]
 assert every_other([10, 20, 30]) == [10, 30]
@@ -49,7 +71,7 @@ assert every_other([]) == []
 
 # Problem 6
 def is_sorted(lst):
-    pass
+    return all(lst[i] <= lst[i + 1] for i in range(len(lst) - 1))
 
 assert is_sorted([1, 2, 3, 4, 5]) == True
 assert is_sorted([1, 3, 2, 4, 5]) == False
