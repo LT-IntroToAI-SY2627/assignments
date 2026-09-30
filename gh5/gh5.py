@@ -15,7 +15,7 @@ def make_greeting(name):
 
 # Problem 2
 def clean_input(text):
-    pass
+    return text.strip().lower()
 
 
 # =============================================================================
@@ -26,7 +26,7 @@ def clean_input(text):
 
 # Problem 3
 def count_words(text):
-    pass
+    return len(clean_input(text).split())
 
 assert count_words("hello world") == 2
 assert count_words("Lane Tech College Prep") == 4
@@ -35,8 +35,11 @@ assert count_words("") == 0
 
 # Problem 4
 def initials(full_name):
-    pass
-
+    name_parts = full_name.split()
+    nickname = ""
+    for part in name_parts:
+        nickname += part[0].upper() + "."
+    return nickname
 assert initials("Alex Johnson") == "A.J."
 assert initials("Mr. Berg") == "M.B."
 assert initials("Lane Tech College Prep") == "L.T.C.P."
