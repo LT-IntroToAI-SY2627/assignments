@@ -10,12 +10,12 @@
 
 # Problem 1
 def make_greeting(name):
-    pass
+    return f"Hey {name}, welcome to the Lane Tech Info Bot!"
 
 
 # Problem 2
 def clean_input(text):
-    pass
+    return text.strip().lower()
 
 
 # =============================================================================
@@ -26,7 +26,9 @@ def clean_input(text):
 
 # Problem 3
 def count_words(text):
-    pass
+    if text == "":
+        return 0
+    return len(text.split())
 
 assert count_words("hello world") == 2
 assert count_words("Lane Tech College Prep") == 4
@@ -35,7 +37,9 @@ assert count_words("") == 0
 
 # Problem 4
 def initials(full_name):
-    pass
+    names = full_name.split()
+    initials = [name[0].upper() for name in names]
+    return ".".join(initials) + "."
 
 assert initials("Alex Johnson") == "A.J."
 assert initials("Mr. Berg") == "M.B."
